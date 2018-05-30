@@ -48,6 +48,10 @@ const routes: Route[] = [
     path: 'about',
     component: AboutComponent
   },
+  {
+    path: '**', // handle not found component
+    component: NotFoundComponent
+  }
 ]
 
 @NgModule({
@@ -79,6 +83,7 @@ In the app component you should add the **router-outlet** component
 ```html
 .... header
 <router-outlet></router-outlet>
+tzakaro addidas outlet 🏃
 .... footer
 ```
 
