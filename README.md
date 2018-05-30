@@ -48,6 +48,10 @@ const routes: Route[] = [
     path: 'about',
     component: AboutComponent
   },
+  {
+    path: '**', // handle not found component
+    component: NotFoundComponent
+  }
 ]
 
 @NgModule({
